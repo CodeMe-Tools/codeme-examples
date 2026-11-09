@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oem-embedded-service"
+version = "1.0.0"
+description = "Sample third-party application embedding Codeme verification engines via OEM SDK"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [
+    {name = "Codeme Integration Examples", email = "examples@codeme.io"}
+]
+dependencies = [
+    "codeme-oem-sdk>=1.0.0"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
